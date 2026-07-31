@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sanctus Golf</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,112 +20,133 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:'Inter',sans-serif;
-background:#fff;
+font-family:Inter,sans-serif;
+background:#faf9f7;
 color:#111;
+line-height:1.7;
+}
+
+.container{
+width:min(92%,700px);
+margin:auto;
+}
+
+section{
+padding:80px 0;
 }
 
 .hero{
-
-height:100vh;
-
+min-height:100vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-
-padding:30px;
-
+justify-content:center;
 text-align:center;
 }
 
 .logo{
-
-font-size:44px;
-font-weight:700;
-letter-spacing:10px;
-margin-bottom:18px;
-
+width:170px;
+margin-bottom:35px;
 }
 
-.tagline{
+h1{
+font-family:"Cormorant Garamond",serif;
+font-size:58px;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:18px;
+}
 
-font-size:17px;
-color:#666;
-line-height:1.6;
-
-max-width:320px;
-
+.hero p{
+font-size:18px;
+color:#555;
+max-width:550px;
+margin:auto;
 }
 
 .button{
 
-margin-top:40px;
-
 display:inline-block;
+margin-top:45px;
 
-padding:16px 34px;
+padding:15px 38px;
+
+border-radius:999px;
 
 background:#111;
-
 color:white;
 
 text-decoration:none;
 
-border-radius:100px;
-
 font-weight:600;
 
 transition:.3s;
-
 }
 
 .button:hover{
-
 background:#333;
+}
+
+.divider{
+
+width:70px;
+height:1px;
+
+background:#c9c9c9;
+
+margin:80px auto;
 
 }
 
-.section{
+h2{
 
-padding:70px 28px;
+font-family:"Cormorant Garamond",serif;
 
-}
+font-size:42px;
 
-.title{
+margin-bottom:22px;
 
-font-size:30px;
-
-margin-bottom:12px;
+text-align:center;
 
 }
 
-.subtitle{
+.text{
 
-color:#666;
+color:#555;
+font-size:17px;
+text-align:center;
 
-line-height:1.7;
+}
 
-margin-bottom:30px;
+.cards{
+
+display:grid;
+gap:22px;
+margin-top:45px;
 
 }
 
 .card{
 
-background:#f6f6f6;
+background:white;
 
-padding:26px;
+padding:32px;
 
-border-radius:20px;
+border-radius:18px;
 
-margin-bottom:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
 
 }
 
 .card h3{
 
-margin-bottom:8px;
+margin-bottom:10px;
+
+font-size:20px;
 
 }
 
@@ -129,27 +154,68 @@ margin-bottom:8px;
 
 color:#666;
 
-line-height:1.6;
-
 }
 
-.footer{
+.verse{
 
-padding:40px;
+background:#111;
+color:white;
+
+padding:90px 25px;
 
 text-align:center;
 
-color:#888;
+}
 
-font-size:14px;
+blockquote{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:34px;
+
+max-width:700px;
+
+margin:auto;
+
+font-style:italic;
 
 }
 
-.cross{
+.reference{
 
+margin-top:25px;
+
+letter-spacing:3px;
+
+font-size:13px;
+
+opacity:.75;
+
+text-transform:uppercase;
+
+}
+
+footer{
+
+padding:35px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#777;
+
+}
+
+@media(max-width:600px){
+
+h1{
+font-size:44px;
+}
+
+blockquote{
 font-size:28px;
-
-margin-bottom:20px;
+}
 
 }
 
@@ -161,75 +227,38 @@ margin-bottom:20px;
 
 <section class="hero">
 
-<div class="cross">✝</div>
+<div class="container">
 
-<div class="logo">
-SANCTUS
-</div>
+<img
+class="logo"
+src="https://cdn.shopify.com/s/files/1/0811/4759/2931/files/9D949BD8-56D0-4212-85A4-C17CE76C8F80_52efe818-d86c-47c2-8b05-3476a492e995.png?v=1785445137"
+alt="Sanctus Golf Logo">
 
-<p class="tagline">
+<h1>Sanctus Golf</h1>
 
-Premium Catholic-inspired golf apparel designed with timeless style for every round.
-
+<p>
+A Catholic-inspired golf apparel brand dedicated to timeless design, exceptional quality, and honoring God through excellence on and off the course.
 </p>
 
-<a href="#" class="button">
-Shop Collection
+<a class="button" href="#about">
+Discover Our Story
 </a>
 
+</div>
+
 </section>
 
-<section class="section">
+<div class="divider"></div>
 
-<h2 class="title">
+<section id="about">
 
-Built with Purpose
+<div class="container">
 
-</h2>
+<h2>Who We Are</h2>
 
-<p class="subtitle">
+<p class="text">
 
-Inspired by faith. Designed for golfers who pursue excellence both on and off the course.
-
-</p>
-
-<div class="card">
-
-<h3>
-Premium Quality
-</h3>
-
-<p>
-
-Luxury fabrics and minimalist design made to perform on the course.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-Faith Inspired
-</h3>
-
-<p>
-
-Subtle Catholic inspiration woven into timeless apparel.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-Modern Golf
-</h3>
-
-<p>
-
-Classic style for the next generation of golfers.
+Sanctus Golf was founded on the belief that faith and sport can coexist with purpose. We create premium apparel that reflects craftsmanship, humility, and integrity—values that extend far beyond the game itself. Every collection is designed to inspire golfers to pursue excellence while remaining grounded in something greater.
 
 </p>
 
@@ -237,12 +266,77 @@ Classic style for the next generation of golfers.
 
 </section>
 
-<footer class="footer">
+<section>
 
-© 2026 Sanctus Golf
+<div class="container">
+
+<h2>Our Vision</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Purpose</h3>
+
+<p>
+
+To build a brand that represents faith through thoughtful design, inspiring golfers to live with conviction both on and off the course.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Craftsmanship</h3>
+
+<p>
+
+Every garment is created with attention to detail, premium materials, and a timeless aesthetic that never goes out of style.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Community</h3>
+
+<p>
+
+We seek to bring together golfers who value excellence, humility, and a life centered on Christ.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="verse">
+
+<blockquote>
+
+"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
+
+</blockquote>
+
+<div class="reference">
+
+Colossians 3:23
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Sanctus Golf • Catholic-Inspired Golf Apparel
 
 </footer>
 
 </body>
-
 </html>
